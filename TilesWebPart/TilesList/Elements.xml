@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ListTemplate
+        Name="TilesList"
+        Type="10000"
+        BaseType="0"
+        OnQuickLaunch="FALSE"
+        SecurityBits="11"
+        Sequence="410"
+        DisplayName="Tiles"
+        Description="Promoted Links Enhanced"
+        Image="/_layouts/15/images/itgen.png"/>
+</Elements>

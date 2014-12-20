@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Tiles" OnQuickLaunch="FALSE" TemplateType="10000" Url="Lists/Tiles" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">TSC Blog</Field>
+          <Field Name="Description">Torsten Schuster Blog</Field>
+          <Field Name="Color">TEAL</Field>
+          <Field Name="SIZE">SMALL</Field>
+          <Field Name="LaunchBehavior">In page navigation</Field>
+          <Field Name="BackgroundImageLocation">~site/TilesImages/Cloud.png</Field>
+          <Field Name="LinkLocation">http://blog.sutor.ws</Field>
+          <Field Name="TileOrder">1;#Col0</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">SP and BI Consultants</Field>
+          <Field Name="Description">MindBusiness GmbH Consulting Team of pmOne AG</Field>
+          <Field Name="Color">LIME</Field>
+          <Field Name="Size">WIDE</Field>
+          <Field Name="LaunchBehavior">New Tab</Field>
+          <Field Name="BackgroundImageLocation">~site/TilesImages/Logo_Office_Apps.png</Field>
+          <Field Name="LinkLocation">http://www.mindbusiness.de</Field>
+          <Field Name="TileOrder">2;#Col1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Download</Field>
+          <Field Name="Description">Microsoft Download Sites</Field>
+          <Field Name="Color">BROWN</Field>
+          <Field Name="Size">SMALL</Field>
+          <Field Name="LaunchBehavior">In page navigation</Field>
+          <Field Name="BackgroundImageLocation">~site/TilesImages/IE.png</Field>
+          <Field Name="LinkLocation">http://www.microsoft.com/en-us/download/default.aspx</Field>
+          <Field Name="TileOrder">3;#Col0</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Office365</Field>
+          <Field Name="Description">SharePoint Site</Field>
+          <Field Name="Color">BLUE</Field>
+          <Field Name="Size">SMALL</Field>
+          <Field Name="LaunchBehavior">New Tab</Field>
+          <Field Name="BackgroundImageLocation">~site/TilesImages/MS_Office_2013_Logo-64x64.png</Field>
+          <Field Name="LinkLocation">http://office.microsoft.com/</Field>
+          <Field Name="TileOrder">4;#Col1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Bing</Field>
+          <Field Name="Description">Bing Search</Field>
+          <Field Name="Color">MAGENTA</Field>
+          <Field Name="Size">SMALL</Field>
+          <Field Name="LaunchBehavior">Dialog</Field>
+          <Field Name="BackgroundImageLocation">~site/TilesImages/bingLogo_lg-transparent.png</Field>
+          <Field Name="LinkLocation">http://www.bing.com</Field>
+          <Field Name="TileOrder">5;#Col1</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

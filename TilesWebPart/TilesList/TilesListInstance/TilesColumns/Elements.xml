@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="d74d7817-ffe2-4839-83b0-60740ed150f5.TilesColumns"
+                RegistrationType="List"
+                RegistrationId="10000"
+                Location="CommandUI.Ribbon"
+                Sequence="10001"
+                Title="Invoke &apos;TilesColumns&apos; action">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.List.Settings.Controls._children">
+          <Button Id="Ribbon.List.Settings.TilesColumnsButton"
+                  Alt="Manage Tiles Columns"
+                  Sequence="100"
+                  Command="Invoke_TilesColumnsButtonRequest"
+                  LabelText="Manage Tiles Columns"
+                  TemplateAlias="o1"
+                  Image16by16="~site/Style Library/TilesWp/images/Columns16.png"
+                  Image32by32="~site/Style Library/TilesWp/images/Columns32.png" />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler Command="Invoke_TilesColumnsButtonRequest"
+                          CommandAction="javascript:
+var sSrUrl = window._spPageContextInfo.siteServerRelativeUrl === '/' ? '/' : window._spPageContextInfo.siteServerRelativeUrl + '/';
+var options = {
+    url: sSrUrl + 'Style Library/TilesWp/Pages/TilesColumns.aspx?ListID={ListId}',
+    allowMaximize: true,
+    title: 'Manage Columns',
+    dialogReturnValueCallback: scallback
+};
+SP.SOD.execute('sp.ui.dialog.js', 'SP.UI.ModalDialog.showModalDialog', options);   
+function scallback(dialogResult, returnValue) {
+    if (dialogResult === SP.UI.DialogResult.OK) {
+        //SP.UI.ModalDialog.RefreshPage(SP.UI.DialogResult.OK);
+    }
+}
+"/>
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+</Elements>

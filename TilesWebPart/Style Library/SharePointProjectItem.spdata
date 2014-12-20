@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Style Library\" Type="ElementManifest" />
+    <ProjectItemFile Source="TilesWp\Scripts\App.js" Target="Style Library\TilesWp\Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="TilesWp\Styles\App.css" Target="Style Library\TilesWp\Styles\" Type="ElementFile" />
+    <ProjectItemFile Source="TilesWp\Scripts\App.min.js.map" Target="Style Library\TilesWp\Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="TilesWp\Scripts\App.min.js" Target="Style Library\TilesWp\Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="TilesWp\Styles\App.min.css" Target="Style Library\TilesWp\Styles\" Type="ElementFile" />
+    <ProjectItemFile Source="TilesWp\Images\1pixel.gif" Target="Style Library\TilesWp\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="TilesWp\Images\AppIcon.png" Target="Style Library\TilesWp\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="TilesWp\Images\Columns16.png" Target="Style Library\TilesWp\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="TilesWp\Images\Columns32.png" Target="Style Library\TilesWp\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="TilesWp\Images\EditOption - Copy.png" Target="Style Library\TilesWp\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="TilesWp\Images\EditOption.png" Target="Style Library\TilesWp\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="TilesWp\Images\Icon96.png" Target="Style Library\TilesWp\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="TilesWp\Images\IcoOriginal.png" Target="Style Library\TilesWp\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="TilesWp\Images\Mecanical.png" Target="Style Library\TilesWp\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="TilesWp\Pages\TilesColumns.aspx" Target="Style Library\TilesWp\Pages\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

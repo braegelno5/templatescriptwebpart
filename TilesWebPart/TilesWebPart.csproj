@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{664854E2-E7BF-411A-9CC5-AE19513A6C9B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TilesWebPart</RootNamespace>
+    <AssemblyName>TilesWebPart</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Style Library\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f14e31ca-10c8-41bb-9b70-8212879a0a89}</SharePointProjectItemId>
+    </None>
+    <None Include="Style Library\TilesWp\Scripts\App.min.js.map">
+      <DependentUpon>App.js</DependentUpon>
+    </None>
+    <None Include="TilesImages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c3241e06-dc06-48bf-8ba9-14ec36478407}</SharePointProjectItemId>
+    </None>
+    <None Include="TilesList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f5c9f8a5-c8ba-4d1e-a456-fb1b8a7e6576}</SharePointProjectItemId>
+    </None>
+    <None Include="TilesList\TilesListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0b53b48d-0937-48a9-9b95-2cd65b83aa08}</SharePointProjectItemId>
+    </None>
+    <None Include="TilesList\TilesListInstance\TilesColumns\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3af0d066-8a75-45e3-b4e8-71e2da3d00f0}</SharePointProjectItemId>
+    </None>
+    <None Include="TilesWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{32cdadaa-a67e-4708-b7a5-93d27db2ad9a}</SharePointProjectItemId>
+    </None>
+    <None Include="TilesWebPart\TilesWebPart.webpart">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Style Library\Elements.xml" />
+    <Content Include="Style Library\TilesWp\Pages\TilesColumns.aspx" />
+    <Content Include="Style Library\TilesWp\Images\1pixel.gif" />
+    <Content Include="Style Library\TilesWp\Images\AppIcon.png" />
+    <Content Include="Style Library\TilesWp\Images\Columns16.png" />
+    <Content Include="Style Library\TilesWp\Images\Columns32.png" />
+    <Content Include="Style Library\TilesWp\Images\EditOption - Copy.png" />
+    <Content Include="Style Library\TilesWp\Images\EditOption.png" />
+    <Content Include="Style Library\TilesWp\Images\Icon96.png" />
+    <Content Include="Style Library\TilesWp\Images\IcoOriginal.png" />
+    <Content Include="Style Library\TilesWp\Images\Mecanical.png" />
+    <Content Include="Style Library\TilesWp\Scripts\App.js" />
+    <Content Include="Style Library\TilesWp\Scripts\App.min.js">
+      <DependentUpon>App.js</DependentUpon>
+    </Content>
+    <Content Include="Style Library\TilesWp\Styles\App.css" />
+    <Content Include="Style Library\TilesWp\Styles\App.min.css">
+      <DependentUpon>App.css</DependentUpon>
+    </Content>
+    <Content Include="TilesImages\bingLogo_lg-transparent.png" />
+    <Content Include="TilesImages\Calculator.png" />
+    <Content Include="TilesImages\Cloud.png" />
+    <Content Include="TilesImages\Elements.xml" />
+    <Content Include="TilesImages\IE.png" />
+    <Content Include="TilesImages\Logo_Office_Apps.png" />
+    <Content Include="TilesImages\Mail.png" />
+    <Content Include="TilesImages\MB_0000_calendar.png" />
+    <Content Include="TilesImages\MB_0000_HDD-system.png" />
+    <Content Include="TilesImages\MB_0000_Llama.png" />
+    <Content Include="TilesImages\MB_0000_navigation.png" />
+    <Content Include="TilesImages\MB_0000_Office2010.png" />
+    <Content Include="TilesImages\MB_0000_WMP.png" />
+    <Content Include="TilesImages\MB_0001_HDD.png" />
+    <Content Include="TilesImages\MB_0001_mail1.png" />
+    <Content Include="TilesImages\MB_0001_Office1.png" />
+    <Content Include="TilesImages\MB_0001_pin.png" />
+    <Content Include="TilesImages\MB_0001_poi.png" />
+    <Content Include="TilesImages\MB_0001_TV.png" />
+    <Content Include="TilesImages\MB_0002_Base-copy-19.png" />
+    <Content Include="TilesImages\MB_0002_compas1.png" />
+    <Content Include="TilesImages\MB_0002_mail_sent.png" />
+    <Content Include="TilesImages\MB_0002_office.png" />
+    <Content Include="TilesImages\MB_0002_Visitors.png" />
+    <Content Include="TilesImages\MB_0002_winamp.png" />
+    <Content Include="TilesImages\MB_0003_Apps.png" />
+    <Content Include="TilesImages\MB_0003_compas3.png" />
+    <Content Include="TilesImages\MB_0003_Computer.png" />
+    <Content Include="TilesImages\MB_0003_Favs1.png" />
+    <Content Include="TilesImages\MB_0003_mail2.png" />
+    <Content Include="TilesImages\MB_0003_video_rec.png" />
+    <Content Include="TilesImages\MB_0004_favs2.png" />
+    <Content Include="TilesImages\MB_0004_HW_info.png" />
+    <Content Include="TilesImages\MB_0004_mail_open.png" />
+    <Content Include="TilesImages\MB_0004_One-Note.png" />
+    <Content Include="TilesImages\MB_0004_path.png" />
+    <Content Include="TilesImages\MB_0004_photo.png" />
+    <Content Include="TilesImages\MB_0005_Camera.png" />
+    <Content Include="TilesImages\MB_0005_gmail2-copy.png" />
+    <Content Include="TilesImages\MB_0005_Outlook.png" />
+    <Content Include="TilesImages\MB_0005_POI.png" />
+    <Content Include="TilesImages\MB_0005_sett_small.png" />
+    <Content Include="TilesImages\MB_0005_weather1.png" />
+    <Content Include="TilesImages\MB_0006_back.png" />
+    <Content Include="TilesImages\MB_0006_calculator.png" />
+    <Content Include="TilesImages\MB_0006_camera3.png" />
+    <Content Include="TilesImages\MB_0006_gmail-copy.png" />
+    <Content Include="TilesImages\MB_0006_gmaps.png" />
+    <Content Include="TilesImages\MB_0006_Power-Point.png" />
+    <Content Include="TilesImages\MB_0007_Bing.png" />
+    <Content Include="TilesImages\MB_0007_book.png" />
+    <Content Include="TilesImages\MB_0007_msg.png" />
+    <Content Include="TilesImages\MB_0007_VideoRecorder.png" />
+    <Content Include="TilesImages\MB_0007_windows.png" />
+    <Content Include="TilesImages\MB_0007_Word.png" />
+    <Content Include="TilesImages\MB_0008_Excel.png" />
+    <Content Include="TilesImages\MB_0008_java.png" />
+    <Content Include="TilesImages\MB_0008_navteq.png" />
+    <Content Include="TilesImages\MB_0008_phone.png" />
+    <Content Include="TilesImages\MB_0008_save.png" />
+    <Content Include="TilesImages\MB_0008_touch.png" />
+    <Content Include="TilesImages\MB_0009_Autocad.png" />
+    <Content Include="TilesImages\MB_0009_da1.png" />
+    <Content Include="TilesImages\MB_0009_listen.png" />
+    <Content Include="TilesImages\MB_0009_loading.png" />
+    <Content Include="TilesImages\MB_0009_Navteq1.png" />
+    <Content Include="TilesImages\MB_0009_skype1-copy.png" />
+    <Content Include="TilesImages\MB_0010_da2.png" />
+    <Content Include="TilesImages\MB_0010_info.png" />
+    <Content Include="TilesImages\MB_0010_LR.png" />
+    <Content Include="TilesImages\MB_0010_radio.png" />
+    <Content Include="TilesImages\MB_0010_tasks.png" />
+    <Content Include="TilesImages\MB_0010_world.png" />
+    <Content Include="TilesImages\MB_0011_apple.png" />
+    <Content Include="TilesImages\MB_0011_Canada_flag.png" />
+    <Content Include="TilesImages\MB_0011_info3.png" />
+    <Content Include="TilesImages\MB_0011_macro.png" />
+    <Content Include="TilesImages\MB_0011_pen.png" />
+    <Content Include="TilesImages\MB_0011_Sb.png" />
+    <Content Include="TilesImages\MB_0012_COMPAS2.png" />
+    <Content Include="TilesImages\MB_0012_info2.png" />
+    <Content Include="TilesImages\MB_0012_kontakts.png" />
+    <Content Include="TilesImages\MB_0012_landskape.png" />
+    <Content Include="TilesImages\MB_0012_pliok.png" />
+    <Content Include="TilesImages\MB_0012_Ps.png" />
+    <Content Include="TilesImages\MB_0013_APP-info.png" />
+    <Content Include="TilesImages\MB_0013_blank-cd.png" />
+    <Content Include="TilesImages\MB_0013_EU.png" />
+    <Content Include="TilesImages\MB_0013_ID.png" />
+    <Content Include="TilesImages\MB_0013_msg2.png" />
+    <Content Include="TilesImages\MB_0013_pliok2.png" />
+    <Content Include="TilesImages\MB_0014_convertor.png" />
+    <Content Include="TilesImages\MB_0014_IC.png" />
+    <Content Include="TilesImages\MB_0014_iTunes.png" />
+    <Content Include="TilesImages\MB_0014_msg3.png" />
+    <Content Include="TilesImages\MB_0014_SW-info.png" />
+    <Content Include="TilesImages\MB_0014_world1.png" />
+    <Content Include="TilesImages\MB_0015_Ai.png" />
+    <Content Include="TilesImages\MB_0015_currency-e-j.png" />
+    <Content Include="TilesImages\MB_0015_NSA.png" />
+    <Content Include="TilesImages\MB_0015_reload.png" />
+    <Content Include="TilesImages\MB_0015_sound.png" />
+    <Content Include="TilesImages\MB_0015_voicemaill.png" />
+    <Content Include="TilesImages\MB_0016_currency-e-p.png" />
+    <Content Include="TilesImages\MB_0016_EAAA.png" />
+    <Content Include="TilesImages\MB_0016_Fx.png" />
+    <Content Include="TilesImages\MB_0016_multitask1.png" />
+    <Content Include="TilesImages\MB_0016_voicemail-12.png" />
+    <Content Include="TilesImages\MB_0016_walkman.png" />
+    <Content Include="TilesImages\MB_0017_currency-e-d.png" />
+    <Content Include="TilesImages\MB_0017_folder.png" />
+    <Content Include="TilesImages\MB_0017_Fw.png" />
+    <Content Include="TilesImages\MB_0017_note2.png" />
+    <Content Include="TilesImages\MB_0017_Sattelite.png" />
+    <Content Include="TilesImages\MB_0017_sound2.png" />
+    <Content Include="TilesImages\MB_0018_Dw.png" />
+    <Content Include="TilesImages\MB_0018_help.png" />
+    <Content Include="TilesImages\MB_0018_note1.png" />
+    <Content Include="TilesImages\MB_0018_Translate.png" />
+    <Content Include="TilesImages\MB_0018_viewer.png" />
+    <Content Include="TilesImages\MB_0019_Br.png" />
+    <Content Include="TilesImages\MB_0019_plus.png" />
+    <Content Include="TilesImages\MB_0019_profiles.png" />
+    <Content Include="TilesImages\MB_0019_shut-down.png" />
+    <Content Include="TilesImages\MB_0019_zune1.png" />
+    <Content Include="TilesImages\MB_0020_AE.png" />
+    <Content Include="TilesImages\MB_0020_clock1.png" />
+    <Content Include="TilesImages\MB_0020_light.png" />
+    <Content Include="TilesImages\MB_0020_sett-big.png" />
+    <Content Include="TilesImages\MB_0020_zune2.png" />
+    <Content Include="TilesImages\MB_0021_clock2.png" />
+    <Content Include="TilesImages\MB_0021_cloud.png" />
+    <Content Include="TilesImages\MB_0021_Fl.png" />
+    <Content Include="TilesImages\MB_0021_tools.png" />
+    <Content Include="TilesImages\MB_0021_zune3.png" />
+    <Content Include="TilesImages\MB_0022_AIR.png" />
+    <Content Include="TilesImages\MB_0022_lastfm.png" />
+    <Content Include="TilesImages\MB_0022_range.png" />
+    <Content Include="TilesImages\MB_0022_tok.png" />
+    <Content Include="TilesImages\MB_0023_home2.png" />
+    <Content Include="TilesImages\MB_0023_ps.com.png" />
+    <Content Include="TilesImages\MB_0023_sim.png" />
+    <Content Include="TilesImages\MB_0023_YT1.png" />
+    <Content Include="TilesImages\MB_0024_LOCK.png" />
+    <Content Include="TilesImages\MB_0024_smartbuble.png" />
+    <Content Include="TilesImages\MB_0024_TV 1.png" />
+    <Content Include="TilesImages\MB_0024_YT2.png" />
+    <Content Include="TilesImages\MB_0025_Champions_League.png" />
+    <Content Include="TilesImages\MB_0025_Flash.png" />
+    <Content Include="TilesImages\MB_0025_Marvel.png" />
+    <Content Include="TilesImages\MB_0025_taskmgr-copy.png" />
+    <Content Include="TilesImages\MB_0026_adobe-acrobat.png" />
+    <Content Include="TilesImages\MB_0026_ea.png" />
+    <Content Include="TilesImages\MB_0026_LIBRARY.png" />
+    <Content Include="TilesImages\MB_0026_taskmgr.png" />
+    <Content Include="TilesImages\MB_0027_android.png" />
+    <Content Include="TilesImages\MB_0027_bat1.png" />
+    <Content Include="TilesImages\MB_0027_LIBRARY.png" />
+    <Content Include="TilesImages\MB_0028_android2.png" />
+    <Content Include="TilesImages\MB_0028_iBOOKS.png" />
+    <Content Include="TilesImages\MB_0028_sd.png" />
+    <Content Include="TilesImages\MB_0029_----------.png" />
+    <Content Include="TilesImages\MB_0029_programs.png" />
+    <Content Include="TilesImages\MB_0029_sim.png" />
+    <Content Include="TilesImages\MB_0030_3dmax.png" />
+    <Content Include="TilesImages\MB_0030_off.png" />
+    <Content Include="TilesImages\MB_0031_Desktop.png" />
+    <Content Include="TilesImages\MB_0032_Memory-Card.png" />
+    <Content Include="TilesImages\MB_0033_expand2.png" />
+    <Content Include="TilesImages\MB_0034_expand3.png" />
+    <Content Include="TilesImages\MB_0035_keyboard2.png" />
+    <Content Include="TilesImages\MB_0036_keyboard.png" />
+    <Content Include="TilesImages\MB_0037_Control-Panel2.png" />
+    <Content Include="TilesImages\MB_0038_Control-Panel1.png" />
+    <Content Include="TilesImages\MB_0039_print.png" />
+    <Content Include="TilesImages\MB_0040_skaner-1.png" />
+    <Content Include="TilesImages\MB_0041_skaner.png" />
+    <Content Include="TilesImages\MB_0042_apps4.png" />
+    <Content Include="TilesImages\MB_0043_apps9.png" />
+    <Content Include="TilesImages\MB_0044_rotate.png" />
+    <Content Include="TilesImages\MB_0045_3D.png" />
+    <Content Include="TilesImages\MS_0000s_0000_vivacom.png" />
+    <Content Include="TilesImages\MS_0000s_0001_vodafone3.png" />
+    <Content Include="TilesImages\MS_0000s_0002_vodafone2.png" />
+    <Content Include="TilesImages\MS_0000s_0003_gmail2.png" />
+    <Content Include="TilesImages\MS_0000s_0004_verizon.png" />
+    <Content Include="TilesImages\MS_0000s_0005_vodafone1.png" />
+    <Content Include="TilesImages\MS_0000s_0006_t-m.png" />
+    <Content Include="TilesImages\MS_0000s_0007_gmail.png" />
+    <Content Include="TilesImages\MS_0000s_0008_google.png" />
+    <Content Include="TilesImages\MS_0000s_0009_facebook.png" />
+    <Content Include="TilesImages\MS_0000s_0010_twitter1.png" />
+    <Content Include="TilesImages\MS_0000s_0011_skype1.png" />
+    <Content Include="TilesImages\MS_0000s_0012_wifi-router.png" />
+    <Content Include="TilesImages\MS_0000s_0013_signal1.png" />
+    <Content Include="TilesImages\MS_0000s_0014_net.png" />
+    <Content Include="TilesImages\MS_0000s_0015_rss.png" />
+    <Content Include="TilesImages\MS_0000s_0016_opera.png" />
+    <Content Include="TilesImages\MS_0000s_0017_firefox2.png" />
+    <Content Include="TilesImages\MS_0000s_0018_BT2.png" />
+    <Content Include="TilesImages\MS_0000s_0019_Chrome.png" />
+    <Content Include="TilesImages\MS_0000s_0020_globul.png" />
+    <Content Include="TilesImages\MS_0000s_0021_mtel.png" />
+    <Content Include="TilesImages\MS_0000s_0022_att2.png" />
+    <Content Include="TilesImages\MS_0000s_0023_att.png" />
+    <Content Include="TilesImages\MS_0000s_0024_g-google.png" />
+    <Content Include="TilesImages\MS_0000s_0025_facebook2.png" />
+    <Content Include="TilesImages\MS_0000s_0026_twitter3.png" />
+    <Content Include="TilesImages\MS_0000s_0027_twitter2.png" />
+    <Content Include="TilesImages\MS_0000s_0028_skype2.png" />
+    <Content Include="TilesImages\MS_0000s_0029_netw_conn.png" />
+    <Content Include="TilesImages\MS_0000s_0030_wi-fi.png" />
+    <Content Include="TilesImages\MS_0000s_0031_net3.png" />
+    <Content Include="TilesImages\MS_0000s_0032_USB1.png" />
+    <Content Include="TilesImages\MS_0000s_0033_signal2.png" />
+    <Content Include="TilesImages\MS_0000s_0034_signal4.png" />
+    <Content Include="TilesImages\MS_0000s_0035_signal.png" />
+    <Content Include="TilesImages\MS_0000s_0036_search.png" />
+    <Content Include="TilesImages\MS_0000s_0037_ie.png" />
+    <Content Include="TilesImages\MS_0000s_0038_Firefox.png" />
+    <Content Include="TilesImages\MS_0000s_0039_bt.png" />
+    <Content Include="TilesImages\MS_0000s_0040_Hand.png" />
+    <Content Include="TilesImages\MS_Office_2013_Logo-64x64.png" />
+    <Content Include="TilesImages\People.png" />
+    <Content Include="TilesImages\Pictures.png" />
+    <Content Include="TilesList\Elements.xml" />
+    <Content Include="TilesList\Schema.xml" />
+    <Content Include="TilesList\TilesListInstance\Elements.xml" />
+    <Content Include="TilesList\TilesListInstance\TilesColumns\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="TilesWebPart\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{027d6874-ca78-4a8e-ae67-12bb236a43c0}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\SiteFeature\SiteFeature.feature">
+      <FeatureId>{e5aa6f5a-f326-4757-a4a6-2912a1b0e231}</FeatureId>
+    </None>
+    <None Include="Features\SiteFeature\SiteFeature.Template.xml">
+      <DependentUpon>SiteFeature.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

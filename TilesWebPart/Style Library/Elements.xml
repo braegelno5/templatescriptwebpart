@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Style Library">
+    <File Path="Style Library\TilesWp\Scripts\App.js" Url="Style Library/TilesWp/Scripts/App.js" Type="GhostableInLibrary" ReplaceContent="TRUE" />
+    <File Path="Style Library\TilesWp\Styles\App.css" Url="Style Library/TilesWp/Styles/App.css" Type="GhostableInLibrary" ReplaceContent="TRUE" />
+    <File Path="Style Library\TilesWp\Scripts\App.min.js" Url="Style Library/TilesWp/Scripts/App.min.js" Type="GhostableInLibrary" ReplaceContent="TRUE" />
+    <File Path="Style Library\TilesWp\Styles\App.min.css" Url="Style Library/TilesWp/Styles/App.min.css" Type="GhostableInLibrary" ReplaceContent="TRUE" />
+    <File Path="Style Library\TilesWp\Images\1pixel.gif" Url="Style Library/TilesWp/Images/1pixel.gif" />
+    <File Path="Style Library\TilesWp\Images\AppIcon.png" Url="Style Library/TilesWp/Images/AppIcon.png" />
+    <File Path="Style Library\TilesWp\Images\Columns16.png" Url="Style Library/TilesWp/Images/Columns16.png" />
+    <File Path="Style Library\TilesWp\Images\Columns32.png" Url="Style Library/TilesWp/Images/Columns32.png" />
+    <File Path="Style Library\TilesWp\Images\EditOption - Copy.png" Url="Style Library/TilesWp/Images/EditOption - Copy.png" />
+    <File Path="Style Library\TilesWp\Images\EditOption.png" Url="Style Library/TilesWp/Images/EditOption.png" />
+    <File Path="Style Library\TilesWp\Images\Icon96.png" Url="Style Library/TilesWp/Images/Icon96.png" />
+    <File Path="Style Library\TilesWp\Images\IcoOriginal.png" Url="Style Library/TilesWp/Images/IcoOriginal.png" />
+    <File Path="Style Library\TilesWp\Images\Mecanical.png" Url="Style Library/TilesWp/Images/Mecanical.png" />
+    <File Path="Style Library\TilesWp\Pages\TilesColumns.aspx" Url="Style Library/TilesWp/Pages/TilesColumns.aspx" />
+  </Module>
+</Elements>

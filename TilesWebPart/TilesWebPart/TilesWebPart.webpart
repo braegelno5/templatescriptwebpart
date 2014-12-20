@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.SharePoint.WebPartPages.ScriptEditorWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Tiles Naviagtion</property>
+        <property name="Description" type="string">Tiles Navigation Web Part</property>
+        <property name="ChromeType" type="chrometype">None</property>
+        <property name="Content" type="string">
+          <![CDATA[
+          <script type="text/javascript">
+            // !change only the right side for your settings, that means variable = value!
+            var tilesListName = 'Tiles'; // your tiles list
+            // !from here don't change anything!
+            var tilesServerRelativeUrl = window._spPageContextInfo.siteServerRelativeUrl === '/' ? '/' : window._spPageContextInfo.siteServerRelativeUrl + '/';
+            var tilesJqScriptOutputed = false;
+            if (!window.jQuery && tilesJqScriptOutputed === false) {
+                //output the script (load it)
+                document.write('<' + 'script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js" type="text/javascript"><' + '/script>');
+                //only output the script once..
+                tilesJqScriptOutputed = true;   
+            }
+            document.write('<' + 'script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js" type="text/javascript"><' + '/script>');
+            document.write('<' + 'script src="' + tilesServerRelativeUrl + 'Style Library/TilesWp/scripts/app.min.js" type="text/javascript"><' + '/script>');
+            document.write('<' + 'script src="' + tilesServerRelativeUrl + '_layouts/15/sp.runtime.js" type="text/javascript"><' + '/script>');
+            document.write('<' + 'script src="' + tilesServerRelativeUrl + '_layouts/15/sp.js" type="text/javascript"><' + '/script>');
+            document.write('<' + 'link href="' + tilesServerRelativeUrl + 'Style Library/TilesWp/styles/app.min.css" type="text/css" rel="stylesheet" ><' + '/link>');
+          </script>
+          <a id="TitleSettings" hidden></a>
+          ]]>
+        </property>
+        <property name="CatalogIconImageUrl" type="string">../Style Library/TilesWp/images/Icon96.png</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>
