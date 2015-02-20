@@ -4,29 +4,29 @@
     <Data>
       <Rows>
         <Row>
-          <Field Name="Title">TSC Blog</Field>
-          <Field Name="Description">Torsten Schuster Blog</Field>
-          <Field Name="Color">TEAL</Field>
+          <Field Name="Title">Authors Web</Field>
+          <Field Name="Description">SuTor</Field>
+          <Field Name="Color">RED</Field>
           <Field Name="SIZE">SMALL</Field>
           <Field Name="LaunchBehavior">In page navigation</Field>
           <Field Name="BackgroundImageLocation">~site/TilesImages/Cloud.png</Field>
-          <Field Name="LinkLocation">http://blog.sutor.ws</Field>
+          <Field Name="LinkLocation">http://sutor.ws</Field>
           <Field Name="TileOrder">1;#Col0</Field>
         </Row>
         <Row>
-          <Field Name="Title">SP and BI Consultants</Field>
-          <Field Name="Description">MindBusiness GmbH Consulting Team of pmOne AG</Field>
+          <Field Name="Title">BI and SP Consultants</Field>
+          <Field Name="Description">pmOne AG</Field>
           <Field Name="Color">LIME</Field>
           <Field Name="Size">WIDE</Field>
           <Field Name="LaunchBehavior">New Tab</Field>
           <Field Name="BackgroundImageLocation">~site/TilesImages/Logo_Office_Apps.png</Field>
-          <Field Name="LinkLocation">http://www.mindbusiness.de</Field>
+          <Field Name="LinkLocation">http://www.pmone.com</Field>
           <Field Name="TileOrder">2;#Col1</Field>
         </Row>
         <Row>
           <Field Name="Title">Download</Field>
           <Field Name="Description">Microsoft Download Sites</Field>
-          <Field Name="Color">BROWN</Field>
+          <Field Name="Color">BLUE</Field>
           <Field Name="Size">SMALL</Field>
           <Field Name="LaunchBehavior">In page navigation</Field>
           <Field Name="BackgroundImageLocation">~site/TilesImages/IE.png</Field>
@@ -36,7 +36,7 @@
         <Row>
           <Field Name="Title">Office365</Field>
           <Field Name="Description">SharePoint Site</Field>
-          <Field Name="Color">BLUE</Field>
+          <Field Name="Color">ORANGE</Field>
           <Field Name="Size">SMALL</Field>
           <Field Name="LaunchBehavior">New Tab</Field>
           <Field Name="BackgroundImageLocation">~site/TilesImages/MS_Office_2013_Logo-64x64.png</Field>
@@ -46,7 +46,7 @@
         <Row>
           <Field Name="Title">Bing</Field>
           <Field Name="Description">Bing Search</Field>
-          <Field Name="Color">MAGENTA</Field>
+          <Field Name="Color">ORANGE</Field>
           <Field Name="Size">SMALL</Field>
           <Field Name="LaunchBehavior">Dialog</Field>
           <Field Name="BackgroundImageLocation">~site/TilesImages/bingLogo_lg-transparent.png</Field>

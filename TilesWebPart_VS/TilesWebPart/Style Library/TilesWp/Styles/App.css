@@ -3,7 +3,7 @@ body {
      min-width: 520px;
 }
 .column {
-    width: 170px; 
+    width: 160px; 
     float: left; 
     padding-bottom: 100px;
 }
@@ -21,8 +21,8 @@ body {
 
 /* Custom styles for the tiles */
 .tile{
-    width:150px;
-    height:150px;
+    width:140px;
+    height:140px;
     color:#FFFFFF;
     margin: 0;
     margin-top:5px;
@@ -82,14 +82,13 @@ body {
 .Tile-Description {
     text-align:left;
     left:0 ;
-    /*width: 160px;*/ 
-    width: 150px;
+    width: 140px;
     color: #fff; 
     position: absolute;
     background-color: #000000;
     background-color: rgba(0, 0, 0, 0.6); 
-    top: 125px; 
-    height: 160px;
+    top: 115px; 
+    height: 150px;
     font-size: 12pt;
     padding:10px;
 }

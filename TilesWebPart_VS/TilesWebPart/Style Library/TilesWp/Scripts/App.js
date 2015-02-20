@@ -10,14 +10,14 @@ var oList;
 
 function TileShadow() {
     $('.Tile-Description').parent().mouseenter(function () {
-        $(this).children('.Tile-Description').css('top', '125px');
-        $(this).children('.Tile-Description').animate({ top: '-=125' }, 10);
+        $(this).children('.Tile-Description').css('top', '115px');
+        $(this).children('.Tile-Description').animate({ top: '-=115' }, 10);
     }).mouseleave(function () {
         $(this).children('.Tile-Description').css('top', '0');
-        if ($(this).height() !== 320) {
-            $(this).children('.Tile-Description').animate({ top: '+=125' }, 10);
+        if ($(this).height() !== 300) {
+            $(this).children('.Tile-Description').animate({ top: '+=115' }, 10);
         } else {
-            $(this).children('.Tile-Description').animate({ top: '+=295' }, 10);
+            $(this).children('.Tile-Description').animate({ top: '+=275' }, 10);
         }
     });
 
@@ -165,14 +165,14 @@ function retrieveListItems() {
             var tileDescriptionStyle = '';
 
             if (itemObject.size === "LARGE") {
-                columnDomObject.css('width', '340px');
-                columnDomObject.css('height', '340px');
-                tileStyle = 'width:320px;height:320px;';
-                tileDescriptionStyle = " style='width:320px;top:295px;height:330px'";
+                columnDomObject.css('width', '320px');
+                columnDomObject.css('height', '320px');
+                tileStyle = 'width:300px;height:300px;';
+                tileDescriptionStyle = " style='width:300px;top:275px;height:300px'";
             } else if (itemObject.size === "WIDE") {
-                columnDomObject.css('width', '340px');
-                tileStyle = 'width:320px;';
-                tileDescriptionStyle = " style='width:320px;'";
+                columnDomObject.css('width', '320px');
+                tileStyle = 'width:300px;';
+                tileDescriptionStyle = " style='width:300px;'";
             }
 
             columnDomObject.append("<div id='" + itemObject.itemId + "' class='tile " + itemObject.color + "' style='" + tileStyle + "background-image:url(" + itemObject.backgroundImageLocation + ");'><div class='Tile-Description'" + tileDescriptionStyle + ">" + linkBehavior + "<div style='float:left;width:80%;text-align:left;'>" + itemObject.title + "</div></a><div style='float:right;width:20%;text-align:right'><a href='#' onclick='ShowDialog(" + itemObject.itemId + ")' style='text-align:right;z-index:1000'><img src='" + editImageUrl + "' /></a></div>" + linkBehavior + "<div style='height:90%'><p>" + itemObject.description + "</p></div></a></div></div>");
