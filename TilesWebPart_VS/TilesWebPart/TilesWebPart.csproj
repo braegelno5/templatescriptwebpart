@@ -60,6 +60,7 @@
     <Reference Include="System.Web.Extensions" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\TilesWebPart.wsp" />
     <None Include="Style Library\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{f14e31ca-10c8-41bb-9b70-8212879a0a89}</SharePointProjectItemId>
     </None>
