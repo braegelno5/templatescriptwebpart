@@ -8,4 +8,4 @@ This project will show how we are able to build powerfull web parts for office 3
 - the part uses a list created from sandboxed schema, so if the solution was removed, the tiles list will not work anymore
 - a next version will solve this
 
-[![ScreenShot](PromotedLinks.JPG)](hhtp://pmOne.com)
+![ScreenShot](PromotedLinks.JPG)
