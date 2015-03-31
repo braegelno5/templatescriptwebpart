@@ -14,13 +14,13 @@
           <Field Name="TileOrder">1;#Col0</Field>
         </Row>
         <Row>
-          <Field Name="Title">BI and SP Consultants</Field>
-          <Field Name="Description">pmOne AG</Field>
+          <Field Name="Title">Collaboration-Lösungen</Field>
+          <Field Name="Description">Hansevision GmbH</Field>
           <Field Name="Color">LIME</Field>
           <Field Name="Size">WIDE</Field>
           <Field Name="LaunchBehavior">New Tab</Field>
           <Field Name="BackgroundImageLocation">~site/TilesImages/Logo_Office_Apps.png</Field>
-          <Field Name="LinkLocation">http://www.pmone.com</Field>
+          <Field Name="LinkLocation">http://www.hansevision.com</Field>
           <Field Name="TileOrder">2;#Col1</Field>
         </Row>
         <Row>
